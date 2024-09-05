@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sports</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #153b5c;
+            color: #f3f4f6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #3aa9f3;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        h4 {
+            color: #f3f4f6;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        /* Match List Styles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+        }
+        
+        ul li {
+            position: relative;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            overflow: hidden;
+            background-color: #1872a9;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 3px solid transparent; /* Initial border transparent */
+            background-clip: padding-box; /* Ensures background stays within the borders */
+        }
+        
+        ul li::before, ul li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #3ac8f3, #1872a9, #54d2f1);
+            background-size: 200% 200%;
+            transition: background-position 0.5s ease;
+            z-index: -1;
+        }
+        
+        ul li::before {
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+        
+        ul li::after {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+        
+        ul li:hover::before {
+            background-position: 100% 0;
+        }
+        
+        ul li:hover::after {
+            background-position: 0 100%;
+        }
+        
+        ul li:hover {
+            transform: scale(1.05);
+            border-color: #3af362; /* Border color changes on hover */
+        }
+        
+        ul li a {
+            color: #f3f4f6;
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+        
+        ul li a:hover {
+            color: #ffffff;
+        }
+        
+        /* Icon Styles */
+        i.fas.fa-watch {
+            color: #f3c13a;
+            margin-left: 5px;
+        }
+        h5{color: #ffffff;
+
+        }
+        hr { border-color: #96d4e4;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Sport Schedule</h1>
+    <hr>
+    <h4>4 September 2024</h4>
+    <h5>Click To Watch</h2>
+    <ul>
+     
+        
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd5.php">12:10 Australia x Bahrain</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd8.php">12:35 Japan x China</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br6.php">12:35 Japan x China</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd11.php">13:00 Korea Republic x Palestine</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv3.php">13:30 DP World Tour: Omega European Masters - D1</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd7.php">16:45 Italy U21 x San Marino U21</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd1.php">18:00 Azerbaijan x Sweden</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv1.php">18:00 Azerbaijan x Sweden</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br1.php">18:00 Azerbaijan x Sweden</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br2.php">18:00 Azerbaijan x Sweden</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd8.php">18:00 Ghana x Angola</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv2.php">18:00 Ghana x Angola</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd11.php">18:00 Iraq x Oman</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd4.php">20:00 Saudi Arabia x Indonesia</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd1.php">20:45 Portugal x Croatia</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv1.php">20:45 Portugal x Croatia</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br1.php">20:45 Portugal x Croatia</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br2.php">20:45 Portugal x Croatia</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd2.php">20:45 Serbia x Spain</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd6.php">20:45 Serbia x Spain</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv2.php">20:45 Serbia x Spain</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br5.php">20:45 Serbia x Spain</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd5.php">20:45 Scotland x Poland</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv3.php">20:45 Scotland x Poland</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br6.php">20:45 Scotland x Poland</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd9.php">20:45 Denmark x Switzerland</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd3.php">20:45 Denmark x Switzerland</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv4.php">20:45 Denmark x Switzerland</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br4.php">20:45 Denmark x Switzerland</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv5.php">20:45 Northern Ireland x Luxembourg</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd11.php">20:45 Belarus x Bulgaria</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd8.php">21:00 Algeria x Equatorial Guinea</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd10.php">21:00 Tunisia x Madagascar</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br3.php">01:00 Cuiabá x Juventude</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br6.php">01:00 Boxing: Arthur Biyarslanov x Marcos Villasana Jr.</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd1.php">02:00 Argentina x Chile</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd6.php">02:00 Argentina x Chile</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/pt/sporttv1.php">02:00 Argentina x Chile</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br1.php">02:00 Argentina x Chile</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br2.php">02:00 Argentina x Chile</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/hd/hd2.php">02:00 NFL: Baltimore Ravens @ Kansas City Chiefs</a></li>
+        <li><a href="https://v4.sportsonline.si/channels/bra/br4.php">02:30 Paysandu x Amazonas</a></li>
+        </ul>
